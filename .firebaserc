@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-project-db-c1beb": {
+      "hosting": {
+        "group-project": [
+          "angular-project-db-c1beb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-project-db-c1beb"
+  }
+}
