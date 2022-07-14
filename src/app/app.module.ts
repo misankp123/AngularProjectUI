@@ -11,13 +11,18 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import{FormsModule} from '@angular/forms';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ForgotPasswordComponent,
+    VarifyEmailComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import{FormsModule} from '@angular/forms';
     provideFirestore(() => getFirestore()),
     FormsModule
   ],
-  providers: [],
+  providers: [{provide:FIREBASE_OPTIONS,useValue:environment.firebase}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
