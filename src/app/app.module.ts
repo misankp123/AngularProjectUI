@@ -14,6 +14,9 @@ import{FormsModule} from '@angular/forms';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { VarifyEmailComponent } from './component/varify-email/varify-email.comp
     DashboardComponent,
     ForgotPasswordComponent,
     VarifyEmailComponent
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { VarifyEmailComponent } from './component/varify-email/varify-email.comp
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [{provide:FIREBASE_OPTIONS,useValue:environment.firebase}],
   bootstrap: [AppComponent]
