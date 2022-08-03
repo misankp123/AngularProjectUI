@@ -15,6 +15,13 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateBotComponent } from './component/create-bot/create-bot.component';
+import { EditBotComponent } from './component/edit-bot/edit-bot.component';
+import { StoriesComponent } from './component/stories/stories.component';
+import { EntitiesComponent } from './component/entities/entities.component';
+import { WebhooksComponent } from './component/webhooks/webhooks.component';
+import { ConsoleComponent } from './component/console/console.component';
+import { Router} from '@angular/router'
 
 
 
@@ -25,7 +32,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VarifyEmailComponent
+    VarifyEmailComponent,
+    CreateBotComponent,
+    EditBotComponent,
+    StoriesComponent,
+    EntitiesComponent,
+    WebhooksComponent,
+    ConsoleComponent
     
     
   ],
