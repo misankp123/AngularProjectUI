@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #093992;">
     <div class="container">
         <!-- Site Logo Here -->
-        <a class="navbar-brand" href="#"><b>ChatBot</b></a>
+        <a class="navbar-brand" routerLink="#"><b>ChatBot</b></a>
         <!-- Mobile Toggle Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobileToggle" aria-controls="navbarMobileToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,47 +17,48 @@
         <div class="collapse navbar-collapse " id="navbarMobileToggle">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/create-bot">Create Bot</a>
+                    <a class="nav-link" aria-current="page" routerLink="/create-bot">Create Bot</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/edit-bot">Edit Bot</a>
+                    <a class="nav-link" routerLink="/edit-bot">Edit Bot</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/stories">Stories</a>
+                    <a class="nav-link" routerLink="/stories">Stories</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/entities">Entities</a>
+                    <a class="nav-link" routerLink="/entities">Entities</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="webhooks">Webhooks</a>
+                    <a class="nav-link" routerLink="/webhooks">Webhooks</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/console">Console</a>
+                    <a class="nav-link" routerLink="/console">Console</a>
                 </li>
             </ul>
 
             <!-- Right Side -->
             <div class="btn-group float-end">
-                <a href="#" class="dropdown-toggle text-decoration-none text-light" data-bs-toggle="dropdown">
+                <a routerLink="#" class="dropdown-toggle text-decoration-none text-light" data-bs-toggle="dropdown">
                 <i class="fa fa-user-circle-o fa-2x"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a href="#" class="dropdown-item"><i class="fa fa-key"></i> Change Password</a>
+                    <li><a routerLink="/forgot-password" class="dropdown-item"><i class="fa fa-key"></i> Change Password</a>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a href="#" class="dropdown-item"><i class="fa fa-cogs"></i> Settings</a>
+                    <li><a routerLink="#" class="dropdown-item"><i class="fa fa-cogs"></i> Settings</a>
                     </li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a href="/login" class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a></li>
+                    <li><a routerLink="/login" class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a></li>
                 </ul>
             </div>
         </div>
+       
     </div>
 </nav>

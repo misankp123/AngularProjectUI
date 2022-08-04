@@ -56,7 +56,7 @@ export class AuthService {
     this.fireauth.sendPasswordResetEmail(email).then(() => {
       this.router.navigate(['/varify-email']);
     }, err => {
-      alert('Something went wrong');
+      alert('Please enter email');
     })
 }
 
@@ -66,7 +66,7 @@ export class AuthService {
   user.sendEmailVerification().then((res : any) => {
     this.router.navigate(['/varify-email']);
   }, (err : any) => {
-    alert('Something went wrong. Not able to send mail to your email.')
+    alert('Please try again. Not able to send verification to your email.')
   })
 }
 
