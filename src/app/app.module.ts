@@ -22,7 +22,11 @@ import { EntitiesComponent } from './component/entities/entities.component';
 import { WebhooksComponent } from './component/webhooks/webhooks.component';
 import { ConsoleComponent } from './component/console/console.component';
 import { Router} from '@angular/router';
+<<<<<<< HEAD
 import { UploadFileComponent } from './component/upload-file/upload-file.component'
+=======
+import { UploadAndCreateComponent } from './component/upload-and-create/upload-and-create.component'
+>>>>>>> 0049ca6919a425cbe34634b845238d3375f3c13d
 
 
 
@@ -40,7 +44,11 @@ import { UploadFileComponent } from './component/upload-file/upload-file.compone
     EntitiesComponent,
     WebhooksComponent,
     ConsoleComponent,
+<<<<<<< HEAD
     UploadFileComponent
+=======
+    UploadAndCreateComponent
+>>>>>>> 0049ca6919a425cbe34634b845238d3375f3c13d
     
     
   ],
