@@ -13,4 +13,10 @@ export class CreateBotComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  upload(){
+
+    this.route.navigateByUrl('/upload-file')
+
+  }
+
 }

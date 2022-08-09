@@ -1,43 +1,53 @@
-<section class="vh-100" style="background-color: #093992;">
-    <div class="container py-4 h-100">
+<app-navigation></app-navigation>
+<section class="vh-100" style="background-color:#093992;">
+    <div class="container py-5 h-100">
       <div class="row d-flex justify-content-left align-items-center h-100">
-        
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
 
-                        <h3 class="mb-5">Upload File</h3>
+                        <h3 class="mb-5">Upload Files</h3>
                 
                     <form>
-                     
+                         <!-- <div class="mb-3">
+                        <label for="formFile" class="form-label">Upload NLU</label>
+                        <input class="form-control form-control" id="formFile" type="file" />
+                        </div> -->
+                        <h6>Upload NLU</h6>
+                        
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                        <div>
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        </div>
+                        </div>
+                            <div>&nbsp;</div>
+                        <h6>Upload Domian</h6>
                         <div class="input-group mb-3">
                             <input type="file" class="form-control" id="inputGroupFile02">
                             <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         </div>
                             <div>&nbsp;</div>
-
+                        <h6>Upload Stories</h6>
                         <div class="input-group mb-3">
                             <input type="file" class="form-control" id="inputGroupFile02">
                             <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         </div>
                             <div>&nbsp;</div>
-
+                        <h6>Upload Actions</h6>
                         <div class="input-group mb-3">
                             <input type="file" class="form-control" id="inputGroupFile02">
                             <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         </div>
-                            <div>&nbsp;</div>
 
-                        <div class="input-group mb-3">
-                            <input type="file" class="form-control" id="inputGroupFile02">
-                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                        </div>
 
                         <div class="text-center text-lg-end mt-6 pt-4">
                             <button type="button" class="btn btn-primary btn-l"
                             style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="submit()">Submit</button>
                             <a routerLink="/dashboard"></a> 
                         </div>
+
+
 
                        
                     

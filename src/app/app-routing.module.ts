@@ -10,6 +10,7 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { StoriesComponent } from './component/stories/stories.component';
 import { UploadAndCreateComponent } from './component/upload-and-create/upload-and-create.component';
+import { UploadFileComponent } from './component/upload-file/upload-file.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 import { WebhooksComponent } from './component/webhooks/webhooks.component';
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'entities', component : EntitiesComponent},
   {path: 'webhooks', component : WebhooksComponent},
   {path: 'upload', component : UploadAndCreateComponent},
-  {path: 'console', component : ConsoleComponent}
+  {path: 'console', component : ConsoleComponent},
+  {path: 'upload-file',component:UploadFileComponent}
   
 ];
 
