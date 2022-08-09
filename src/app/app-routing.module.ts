@@ -9,6 +9,7 @@ import { ForgotPasswordComponent } from './component/forgot-password/forgot-pass
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { StoriesComponent } from './component/stories/stories.component';
+import { UploadFileComponent } from './component/upload-file/upload-file.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 import { WebhooksComponent } from './component/webhooks/webhooks.component';
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'stories', component : StoriesComponent},
   {path: 'entities', component : EntitiesComponent},
   {path: 'webhooks', component : WebhooksComponent},
-  {path: 'console', component : ConsoleComponent}
+  {path: 'console', component : ConsoleComponent},
+  {path: 'upload-file', component: UploadFileComponent}
   
 ];
 

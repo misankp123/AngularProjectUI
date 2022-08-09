@@ -21,7 +21,8 @@ import { StoriesComponent } from './component/stories/stories.component';
 import { EntitiesComponent } from './component/entities/entities.component';
 import { WebhooksComponent } from './component/webhooks/webhooks.component';
 import { ConsoleComponent } from './component/console/console.component';
-import { Router} from '@angular/router'
+import { Router} from '@angular/router';
+import { UploadFileComponent } from './component/upload-file/upload-file.component'
 
 
 
@@ -38,7 +39,8 @@ import { Router} from '@angular/router'
     StoriesComponent,
     EntitiesComponent,
     WebhooksComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    UploadFileComponent
     
     
   ],
