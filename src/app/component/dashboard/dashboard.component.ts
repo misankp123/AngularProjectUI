@@ -16,6 +16,8 @@ export class DashboardComponent implements OnInit {
 register(){
   this.auth.logout();
 }
+
+currentDate = new Date();
 // createbot(){
 //   this.router.navigate(['/create-bot'])
 // }
