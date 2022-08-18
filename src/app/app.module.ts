@@ -22,7 +22,6 @@ import { EntitiesComponent } from './component/entities/entities.component';
 import { WebhooksComponent } from './component/webhooks/webhooks.component';
 import { ConsoleComponent } from './component/console/console.component';
 import { Router} from '@angular/router';
-import { UploadAndCreateComponent } from './component/upload-and-create/upload-and-create.component'
 import { UploadFileComponent } from './component/upload-file/upload-file.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
 
@@ -42,7 +41,6 @@ import { NavigationComponent } from './component/navigation/navigation.component
     EntitiesComponent,
     WebhooksComponent,
     ConsoleComponent,
-    UploadAndCreateComponent,
     UploadFileComponent,
     NavigationComponent
     
