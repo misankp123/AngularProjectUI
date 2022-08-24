@@ -1,26 +1,31 @@
 <app-navigation></app-navigation>
 <section class="vh-100" style="background-color:#093992;">
 
-    <div class="container py-5 h-100">
+    <!-- <div class="container py-5 h-100">
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
               <div class="card-body p-5 text-center">
+                <h3>Directive</h3>
                             
                 <ul class="list-group mt-5 text-white">
+                    <div *ngFor="let item of displayList; let i=index">
                     <li class="list-group-item d-flex justify-content-between align-content-center">
                         <div class="d-flex flex-row">
                             <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
                             <div class="ml-2">
-                                <h6 class="mb-0">Directive-1</h6>
-                                <div class="about">
-                                    <span>{{currentDate | date:'MM-dd-yyyy'}}</span>
-                                </div>
+                                <h6 class="mb-0">{{item}}</h6>
+                                
                             </div>
                         </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+                        </div>
                     </li>
+                    </div> -->
           
-                    <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <!-- <li class="list-group-item d-flex justify-content-between align-content-center">
                         <div class="d-flex flex-row">
                             <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
                             <div class="ml-2">
@@ -29,6 +34,10 @@
                                     <span>{{currentDate | date:'MM-dd-yyyy'}}</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
                         </div>
                     </li>
           
@@ -41,6 +50,10 @@
                                     <span>{{currentDate | date:'MM-dd-yyyy'}} </span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
                         </div>
                     </li>
           
@@ -56,6 +69,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+                        </div>
                     </li>
           
                     <li class="list-group-item d-flex justify-content-between align-content-center">
@@ -67,6 +84,10 @@
                                     <span>{{currentDate | date:'MM-dd-yyyy'}}</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
                         </div>
                     </li>
 
@@ -80,12 +101,60 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                    </li> -->
+                  <!-- </ul>
+                  <div>&nbsp;</div>
+                  <div class="button-previous">
+                    <button type="button" class="btn btn-secondary" *ngIf="displayPrevious" (click)="getPrevious()"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Previous</button>  
+                 </div>
+                 <div>&nbsp;</div>
+                  <div class="button-next">
+                      <button type="button" class="btn btn-primary" *ngIf="displayNext" (click)="getNext()"
+                      style="padding-left: 2.5rem; padding-right: 2.5rem;">Next</button> 
+                   </div>
+               </div>
+
+
+          </div>
+       </div>
+    </div> -->
+
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-left align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+                <h3>Directive</h3>
+                            
+                <ul class="list-group mt-5 text-white">
+                    <li *ngFor="let bot of displaybotlist" class="list-group-item d-flex justify-content-between align-content-center">
+                        <div class="d-flex flex-row">
+                            <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+                            <div class="ml-2">
+                                <h6 class="mb-0">{{bot}}</h6>
+                                <div class="about">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="delete">
+                            <a class="btn" onclick="">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+                        </div>
                     </li>
+          
+                    
                   </ul>
 
                   <div class="text-center text-lg-end mt-4 pt-2">
                       <button type="button" class="btn btn-primary"
-                      style="padding-left: 2.5rem; padding-right: 2.5rem;">Next</button>  
+                      style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)= "nextBots()">Next</button>  
                    </div>
                </div>
           </div>
