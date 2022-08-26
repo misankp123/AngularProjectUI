@@ -79,3 +79,75 @@ function idleLogout() {
 
     function yourFunction() {
         alert("BOT SESSION TIMED OUT, Click on
+
+
+
+<html>
+<body>
+  <style>
+    .rw-conversation-container .rw-header{background-color: rgb(195,195,195);font-family:Arial;color:white;}
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: rgb(239,110,17);font-family:Arial}
+    .rw-launcher{background-color: white;}
+    .rw-conversation-container .rw-reply{background-color: rgb(239,110,17);color: white;border: none;font-family:Arial}
+    .rw-conversation-container .rw-response{background-color: rgb(0, 139, 139);color: white;font-family:Arial}
+	.rw-conversation-container .rw-messages-container .rw-message{background-color: rgb(195,195,195), opacity:0.5}
+  </style>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: '/greet',
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+          // add other props here
+		  title: "Digital Assistance",
+		  subtitle: "",
+	  profileAvatar:"bot.png",
+      openLauncherImage:"human.png",
+      closeImage: "arrow.png",
+      showMessageDate:"true",
+		  showFullScreenButton: "true",
+		  inputTextFieldHint: "Type bye to end conversation",
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+localStorage.clear();
+</script>
+<script>
+function idleLogout() {
+    var t;
+    window.onload = resetTimer;
+    window.onmousemove = resetTimer;
+    window.onmousedown = resetTimer;  // catches touchscreen presses as well
+    window.ontouchstart = resetTimer; // catches touchscreen swipes as well
+    window.ontouchmove = resetTimer;  // required by some devices
+    window.onclick = resetTimer;      // catches touchpad clicks as well
+    window.onkeydown = resetTimer;
+    window.addEventListener('scroll', resetTimer, true);
+
+    function yourFunction() {
+        alert("BOT SESSION TIMED OUT, Click on Bot icon to chat again!")
+        window.location.reload()
+    }
+
+    function resetTimer() {
+        clearTimeout(t);
+        t = setTimeout(yourFunction, 600000);  // time is in milliseconds
+    }
+}
+idleLogout();
+</script>
+</body>
+<img src="nha_web.png">
+
+</div>
+</html>
